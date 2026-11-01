@@ -1,16 +1,18 @@
-SkautGram APK — проект для сборки Android-приложения из веб-прототипа.
+SkautGram Full UI Upgrade
+========================
 
-ВАЖНО: это пока оболочка интерфейса. Реальных чатов между пользователями,
-сервера, Telegram-бота для входа и push-уведомлений пока нет. Профиль и
-сообщения сохраняются только внутри приложения на этом устройстве.
+Android APK project based on the existing SkautGram WebView shell.
 
-СБОРКА С ТЕЛЕФОНА ЧЕРЕЗ GITHUB:
-1. Войдите на github.com и создайте репозиторий SkautGram-APK.
-2. Загрузите ВСЕ файлы и папки из этого архива, сохранив их расположение.
-3. Откройте вкладку Actions. Выберите Build SkautGram APK и нажмите Run workflow,
-   если сборка не запустилась автоматически.
-4. Дождитесь зелёной отметки. Откройте запуск сборки и скачайте Artifact
-   SkautGram-debug-apk.
-5. Распакуйте скачанный архив и установите app-debug.apk.
+Included:
+- Telegram-inspired mobile chat layout (not copied Telegram source or branding)
+- Chat list, search, tabs, message bubbles, local chat creation
+- Local profile creation and persistence using browser localStorage
+- Locally checked @username uniqueness on this device/browser
+- Gift catalogue and local gift collection
+- Profile editing
 
-Это тестовая debug-сборка, не версия для публикации в Google Play.
+IMPORTANT LIMITATIONS
+This build is a local prototype. Accounts, username checks, chats and gifts are stored only on this device in WebView localStorage. There is NO backend, no global username registry, no real multi-device messaging, no delivery to other users, no push notifications, and no end-to-end encryption. Clearing app data can erase local data. Do not use real passwords or sensitive information.
+
+Build:
+Push this project to GitHub and run the existing Actions workflow, then download the APK artifact.
