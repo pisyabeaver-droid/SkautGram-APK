@@ -1,0 +1,8 @@
+{
+  "name": "skautgram-auth-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Independent SkautGram phone verification via an explicitly linked Telegram bot",
+  "scripts": {"start": "node server.js"},
+  "engines": {"node": ">=20"}
+}
